@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 :root {
@@ -13,11 +15,16 @@
     --active-colo: #ffb400;
 }
 
+.light-theme {
+    --primary-color: #d5d5d5;
+    --secondary-color: #222;
+}
+
 /* hero deader---------------------- */
 .hero-header {
     min-height: 100vh;
     background-color: var(--primary-color);
-    /* background-color: var(--secondary-color); */
+    padding-bottom: 2rem;
 }
 
 .container {
