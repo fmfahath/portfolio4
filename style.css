@@ -3,9 +3,161 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 :root {
     --primary-color: #111;
     --secondary-color: #d2d2d2;
+    --background-color: #2b2b2b;
+    --active-colo: #ffb400;
+}
+
+/* hero deader---------------------- */
+.hero-header {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    /* background-color: var(--secondary-color); */
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.toggle {
+    position: fixed;
+    right: 4%;
+    top: 5%;
+    color: #fff;
+    background-color: var(--background-color);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    ;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header-content .profile {
+    height: 550px;
+    width: 550px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 7px 5px 28px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-content .text-content {
+    padding: 2rem 3.5rem;
+    margin: 1.2rem;
+    color: var(--secondary-color);
+    width: 80%;
+}
+
+.header-content .text-content h1 {
+    color: var(--active-colo);
+    font-size: 3.5rem;
+    position: relative;
+    line-height: 3.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-content .text-content h1 span {
+    color: var(--secondary-color);
+}
+
+.header-content .text-content p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.navigation .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    padding: 0.8rem;
+}
+
+.navigation .nav a {
+    position: relative;
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.navigation .nav a i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+.navigation .nav .active {
+    color: #fff;
+    background-color: var(--active-colo);
+}
+
+.navigation .nav a:hover i {
+    color: #fff;
+    background-color: var(--active-colo);
+}
+
+.header-content .button {
+    position: relative;
+    width: 210px;
+    min-width: 45px;
+    line-height: 45px;
+    margin: 2.5rem 0;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--active-colo);
+    border-radius: 30px;
+    overflow: hidden;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-content .button .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 47px;
+    width: 47px;
+    line-height: 47px;
+    border-radius: 35px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: var(--active-colo);
+    transition: 0.5s;
+}
+
+.header-content .button:hover .icon {
+    width: 100%;
 }
